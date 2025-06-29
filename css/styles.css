@@ -7,31 +7,31 @@ header {
   padding-bottom: 30px;
 }
 
-.block > h1 {
-    padding-bottom: 3vh;
+.block>h1 {
+  padding-bottom: 3vh;
 }
 
 
 .block {
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 
 object {
-    height: 64px;
-    max-width: 128px;
-    margin: 10px;
-    content: overflow;
+  height: 64px;
+  max-width: 128px;
+  margin: 10px;
+  content: overflow;
 }
 
-a > .material-icons {
-    margin-top: 10px;
-    font-size: 50px;
-    color: black;
+a>.material-icons {
+  margin-top: 10px;
+  font-size: 50px;
+  color: black;
 }
 
 svg {
@@ -90,6 +90,7 @@ svg {
     max-width: none;
     /* margin: 0; */
   }
+
   .portfolio-item .caption {
     transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out, background-color 0.7s;
@@ -97,6 +98,7 @@ svg {
     -webkit-clip-path: inset(0px);
     clip-path: inset(0px);
   }
+
   .portfolio-item .caption .caption-content {
     transition: opacity 0.25s;
     /* margin-left: 5rem; */
@@ -104,6 +106,7 @@ svg {
     /* margin-bottom: 5rem; */
     margin: 3rem;
   }
+
   .portfolio-item img {
     transition: -webkit-clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out;
@@ -111,10 +114,12 @@ svg {
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
   }
+
   .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+
   .portfolio-item:hover .caption {
     background-color: rgba(29, 128, 159, 0.9);
     background-color: lavender;
@@ -128,15 +133,16 @@ svg {
 a:hover.portfolio-item {
   text-decoration: none;
 }
+
 /* end porfolio items */
 
 .card {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    background-color: #f5fcff;
-    background-color: aliceblue;
-    border: none;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: #f5fcff;
+  background-color: aliceblue;
+  border: none;
 }
 
 .col-lg-6 {
@@ -144,7 +150,8 @@ a:hover.portfolio-item {
   padding-left: -10px;
 }
 
-.col-md-6, .col-md-12 {
+.col-md-6,
+.col-md-12 {
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -155,31 +162,31 @@ a:hover.portfolio-item {
 }
 
 .card .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 }
 
 #about-me .row ul {
-    width:200px;
-    margin:0 auto;
-    text-align:left;
-    margin-bottom: 10px;
+  width: 200px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 .row h4 {
-    padding-top: 2vh;
+  padding-top: 2vh;
 }
 
 #education i.material-icons {
-    color: darkviolet;
+  color: darkviolet;
 }
 
 #skills ul {
   list-style: none;
   padding-left: 0;
-  white-space: nowrap;  
+  white-space: nowrap;
   font-size: 120%;
   text-align: left;
 }
@@ -188,7 +195,7 @@ a:hover.portfolio-item {
   content: '> ';
   color: red;
   font-weight: bold;
-}}
+}
 
 .card.hover-darken {
   position: relative;
@@ -198,7 +205,10 @@ a:hover.portfolio-item {
 .card.hover-darken::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: inherit;
   mix-blend-mode: multiply;
   opacity: 0;
@@ -206,11 +216,11 @@ a:hover.portfolio-item {
   z-index: 0;
 }
 
-.card.hover-darken > * {
+.card.hover-darken>* {
   position: relative;
   z-index: 1;
 }
 
 .card.hover-darken:hover::before {
-  opacity: 1.0; 
+  opacity: 1.0;
 }
